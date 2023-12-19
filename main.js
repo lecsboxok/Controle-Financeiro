@@ -43,11 +43,11 @@ function insertItem(item, index){
     <td>${item.desc}</td>
     <td class="columnValor">R$ ${item.valor}</td>
     <td class="columnTipo">${item.tipo === "Entrada"
-            ? 'subiu'
-            : 'desceu'  
+            ? '<i class="fa-solid fa-circle-up" style="color: #68a63c;"></i>'
+            : '<i class="fa-solid fa-circle-down" style="color: #ec2134;"></i>'  
     }</td>
     <td class="columnAcao">
-        <button onclick="deleteItem(${index})">LX</button>
+        <button onclick="deleteItem(${index})"><i class="fa-solid fa-trash-can"></i></button>
     </td>
     `
     tbody.appendChild(tr)

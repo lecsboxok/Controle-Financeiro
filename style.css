@@ -5,8 +5,34 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'Manrope';
+    src: url(font/Manrope-VariableFont_wght.ttf);
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+}
+
 header {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #8C4303;
+    margin: 0 430px;
+    padding: 20px;
+}
+
+header div {
+    text-align: left;
+}
+
+header div p {
+    font: 600 16px 'Manrope', sans-serif;
+}
+
+header div img{
+    width: 130px;
 }
 
 main {
@@ -25,13 +51,22 @@ main {
 .resumo div {
     display: flex;
     flex-direction: column;
-    width: 200px;
+    width: 190px;
+    border: 1px solid #F2C53D;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin: 10px 15px;
 }
 
 .info {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 5px 0;
+}
+
+label {
+    font: 600 16px 'Manrope', sans-serif;
 }
 
 .divDesc, .divValor, .divTipo {
@@ -49,22 +84,58 @@ main {
 
 .divDesc, .divValor {
     width: 300px;
+    margin: 0 5px;
+}
+
+.divDesc input, .divValor input {
+    border: 1px solid #F2C53D;
+    border-radius: 5px;
+    padding: 5px 10px;
 }
 
 #btnNovo, #tipo {
-    width: 100px;
+    width: 80px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#tipo {
+    border: 1px solid #F2C53D;
+    margin-right: 5px;
+}
+
+#btnNovo {
+    background-color: #F2C53D;
+    margin-left: 5px;
+    font: 600 14px 'Manrope', sans-serif;
+}
+
+.divTabela {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
 }
 
 th, td {
-    padding: 0 60px;
+    padding-right: 200px;
     text-align: left;
+}
+
+.columnValor {
+    padding: 0;
+    padding-right: 120px;
 }
 
 .columnAcao {
     padding: 0;
 }
 
-hr {
-    height: 1px;
-    background-color: black;
+.columnAcao button {
+    font-size: 18px;
+}
+
+.columnTipo {
+    padding: 0 50px;
+    font-size: 18px;
 }
